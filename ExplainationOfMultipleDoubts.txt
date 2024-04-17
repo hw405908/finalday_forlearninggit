@@ -1,0 +1,7 @@
+How to work on multiple branches at the same time. 
+Answer: Suppose there are three branches main, feature1 and feature2.
+Now, when you are working on feature1 branch and you want to change to feature2 branch to work on feature2, commit your changes first in the feature1 branch done by you, others the file changes by you in the feature1 branch, will be visible to you in another branch also.
+This commit your changes done in a feature1 branch before moving to other branch.
+
+How does git log actually works?
+Answer: In git log you are only able to view the log of the current branch and the 
