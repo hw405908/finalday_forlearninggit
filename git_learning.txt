@@ -1,0 +1,478 @@
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ git branch
+* main
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ 
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ git branch feature1
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ git checkout feature1
+Switched to branch 'feature1'
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ ls
+readme.txt
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ git branch
+* feature1
+  main
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ touch f1.txt
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ git branch
+* feature1
+  main
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ ls
+f1.txt  readme.txt
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ git checkout feature1
+Switched to branch 'feature1'
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ git branch
+* feature1
+  main
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ git status
+On branch feature1
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        f1.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ git add .
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ ls
+f1.txt  readme.txt
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ git status
+On branch feature1
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   f1.txt
+
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ git checkout main
+A       f1.txt
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ ls
+f1.txt  readme.txt
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ git checkout feature1
+A       f1.txt
+Switched to branch 'feature1'
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ ls
+f1.txt  readme.txt
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ git status
+On branch feature1
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   f1.txt
+
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ git commit -m "Till now done in feature
+1"
+[feature1 6d98de3] Till now done in feature1
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 f1.txt
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ ls
+f1.txt  readme.txt
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ git branch
+* feature1
+  main
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ ls
+readme.txt
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ ls
+readme.txt
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ 
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ git branch feature2
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ ls
+readme.txt
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ git branch
+  feature1
+  feature2
+* main
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ git checkout feature2
+Switched to branch 'feature2'
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ git branch
+  feature1
+* feature2
+  main
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ ls
+readme.txt
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ git branch
+  feature1
+* feature2
+  main
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ ls
+readme.txt
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ touch f2.txt
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ ls
+f2.txt  readme.txt
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ ls
+f2.txt  readme.txt
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ git checkout feature2
+Switched to branch 'feature2'
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ ls
+f2.txt  readme.txt
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ git status
+On branch feature2
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        f2.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ git add .
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ git commit -m "Commit done by feature2 branch"
+[feature2 bdb8acf] Commit done by feature2 branch
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 f2.txt
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ ls
+f2.txt  readme.txt
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ ls
+readme.txt
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ 
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ git checkout feature1
+Switched to branch 'feature1'
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ ls
+f1.txt  readme.txt
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ vi f1.txt
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ git log
+commit 6d98de3a1a05d4407436fb607925fa01d442372b (HEAD -> feature1)
+Author: hw405908 <hw405908@gmail.com>
+Date:   Wed Apr 17 12:32:08 2024 +0530
+
+    Till now done in feature1
+
+commit 4215483be971b753c58412aef8f37b5693f8651d (origin/main, origin/HEAD, main)
+Author: hw405908 <hw405908@gmail.com>
+Date:   Wed Apr 17 12:00:06 2024 +0530
+
+    First commit on main
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ git status
+On branch feature1
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   f1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ 
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ 
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ git checkout feature2
+error: Your local changes to the following files would be overwritten by checkout:
+        f1.txt
+Please commit your changes or stash them before you switch branches.
+Aborting
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ git branch
+* feature1
+  feature2
+  main
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ 
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ git log
+commit 6d98de3a1a05d4407436fb607925fa01d442372b (HEAD -> feature1)
+Author: hw405908 <hw405908@gmail.com>
+Date:   Wed Apr 17 12:32:08 2024 +0530
+
+    Till now done in feature1
+
+commit 4215483be971b753c58412aef8f37b5693f8651d (origin/main, origin/HEAD, main)
+Author: hw405908 <hw405908@gmail.com>
+Date:   Wed Apr 17 12:00:06 2024 +0530
+
+    First commit on main
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ git commit --ammend
+error: unknown option `ammend'
+usage: git commit [<options>] [--] <pathspec>...
+
+    -q, --quiet           suppress summary after successful commit
+    -v, --verbose         show diff in commit message template
+
+Commit message options
+    -F, --file <file>     read message from file
+    --author <author>     override author for commit
+    --date <date>         override date for commit
+    -m, --message <message>
+                          commit message
+    -c, --reedit-message <commit>
+                          reuse and edit message from specified commit
+    -C, --reuse-message <commit>
+                          reuse message from specified commit
+    --fixup <commit>      use autosquash formatted message to fixup specified commit
+    --squash <commit>     use autosquash formatted message to squash specified commit
+    --reset-author        the commit is authored by me now (used with -C/-c/--amend)
+    -s, --signoff         add Signed-off-by:
+    -t, --template <file>
+                          use specified template file
+    -e, --edit            force edit of commit
+    --cleanup <mode>      how to strip spaces and #comments from message
+    --status              include status in commit message template
+    -S, --gpg-sign[=<key-id>]
+                          GPG sign commit
+
+Commit contents options
+    -a, --all             commit all changed files
+    -i, --include         add specified files to index for commit
+    --interactive         interactively add files
+    -p, --patch           interactively add changes
+    -o, --only            commit only specified files
+    -n, --no-verify       bypass pre-commit and commit-msg hooks
+    --dry-run             show what would be committed
+    --short               show status concisely
+    --branch              show branch information
+    --ahead-behind        compute full ahead/behind values
+    --porcelain           machine-readable output
+    --long                show status in long format (default)
+    -z, --null            terminate entries with NUL
+    --amend               amend previous commit
+    --no-post-rewrite     bypass post-rewrite hook
+    -u, --untracked-files[=<mode>]
+                          show untracked files, optional modes: all, normal, no. (Default: all)
+    --pathspec-from-file <file>
+                          read pathspec from file
+    --pathspec-file-nul   with --pathspec-from-file, pathspec elements are separated with NUL character
+
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ git commit --amend
+[feature1 bfc3bee] Till now done in feature1
+ Date: Wed Apr 17 12:32:08 2024 +0530
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 f1.txt
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ git log
+commit bfc3bee3633455b78358b4ff577e2867aef3adf6 (HEAD -> feature1)
+Author: hw405908 <hw405908@gmail.com>
+Date:   Wed Apr 17 12:32:08 2024 +0530
+
+    Till now done in feature1
+
+commit 4215483be971b753c58412aef8f37b5693f8651d (origin/main, origin/HEAD, main)
+Author: hw405908 <hw405908@gmail.com>
+Date:   Wed Apr 17 12:00:06 2024 +0530
+
+    First commit on main
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ git status
+On branch feature1
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   f1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ git add .
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ git commit -m "Second commit in the grature1 branch"
+[feature1 84ee2f3] Second commit in the grature1 branch
+ 1 file changed, 1 insertion(+)
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ ls
+f1.txt  readme.txt
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ git log
+commit 84ee2f32b997aa4f48a63ea51127d269787328bb (HEAD -> feature1)
+Author: hw405908 <hw405908@gmail.com>
+Date:   Wed Apr 17 12:44:40 2024 +0530
+
+    Second commit in the grature1 branch
+
+commit bfc3bee3633455b78358b4ff577e2867aef3adf6
+Author: hw405908 <hw405908@gmail.com>
+Date:   Wed Apr 17 12:32:08 2024 +0530
+
+    Till now done in feature1
+
+commit 4215483be971b753c58412aef8f37b5693f8651d (origin/main, origin/HEAD, main)
+Author: hw405908 <hw405908@gmail.com>
+
+[1]+  Stopped                 git log
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ git checkout feature2
+Switched to branch 'feature2'
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ ls
+f2.txt  readme.txt
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ git log
+commit bdb8acf16e61a335150cd34aa7919d30e2ba8810 (HEAD -> feature2)
+Author: hw405908 <hw405908@gmail.com>
+Date:   Wed Apr 17 12:35:33 2024 +0530
+
+    Commit done by feature2 branch
+
+commit 4215483be971b753c58412aef8f37b5693f8651d (origin/main, origin/HEAD, main)
+Author: hw405908 <hw405908@gmail.com>
+Date:   Wed Apr 17 12:00:06 2024 +0530
+
+    First commit on main
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ git log
+commit 4215483be971b753c58412aef8f37b5693f8651d (HEAD -> main, origin/main, origin/HEAD)
+Author: hw405908 <hw405908@gmail.com>
+Date:   Wed Apr 17 12:00:06 2024 +0530
+
+    First commit on main
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ 
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ git g
+git: 'g' is not a git command. See 'git --help'.
+
+The most similar commands are
+        grep
+        gc
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ gitg
+Failed to lookup reference (refs/heads/master): reference 'refs/heads/master' not found
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ 
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ 
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ git branch
+  feature1
+  feature2
+* main
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ git checkout feature1
+Switched to branch 'feature1'
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ git branch
+* feature1
+  feature2
+  main
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ git log
+commit 84ee2f32b997aa4f48a63ea51127d269787328bb (HEAD -> feature1)
+Author: hw405908 <hw405908@gmail.com>
+Date:   Wed Apr 17 12:44:40 2024 +0530
+
+    Second commit in the grature1 branch
+
+commit bfc3bee3633455b78358b4ff577e2867aef3adf6
+Author: hw405908 <hw405908@gmail.com>
+Date:   Wed Apr 17 12:32:08 2024 +0530
+
+    Till now done in feature1
+
+commit 4215483be971b753c58412aef8f37b5693f8651d (origin/main, origin/HEAD, main)
+Author: hw405908 <hw405908@gmail.com>
+
+[2]+  Stopped                 git log
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ git branch
+* feature1
+  feature2
+  main
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ git push origin feature1
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 564 bytes | 564.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0)
+remote: 
+remote: Create a pull request for 'feature1' on GitHub by visiting:
+remote:      https://github.com/hw405908/finalday_forlearninggit/pull/new/feature1
+remote: 
+To github.com:hw405908/finalday_forlearninggit.git
+ * [new branch]      feature1 -> feature1
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ git branch
+* feature1
+  feature2
+  main
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ git log
+commit 84ee2f32b997aa4f48a63ea51127d269787328bb (HEAD -> feature1, origin/feature1)
+Author: hw405908 <hw405908@gmail.com>
+Date:   Wed Apr 17 12:44:40 2024 +0530
+
+    Second commit in the grature1 branch
+
+commit bfc3bee3633455b78358b4ff577e2867aef3adf6
+Author: hw405908 <hw405908@gmail.com>
+Date:   Wed Apr 17 12:32:08 2024 +0530
+
+    Till now done in feature1
+
+commit 4215483be971b753c58412aef8f37b5693f8651d (origin/main, origin/HEAD, main)
+Author: hw405908 <hw405908@gmail.com>
+
+[3]+  Stopped                 git log
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ 
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ 
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ git checkout feature2
+Switched to branch 'feature2'
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ git log
+commit bdb8acf16e61a335150cd34aa7919d30e2ba8810 (HEAD -> feature2)
+Author: hw405908 <hw405908@gmail.com>
+Date:   Wed Apr 17 12:35:33 2024 +0530
+
+    Commit done by feature2 branch
+
+commit 4215483be971b753c58412aef8f37b5693f8651d (origin/main, origin/HEAD, main)
+Author: hw405908 <hw405908@gmail.com>
+Date:   Wed Apr 17 12:00:06 2024 +0530
+
+    First commit on main
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ git push origin feature2
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 277 bytes | 277.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+remote: 
+remote: Create a pull request for 'feature2' on GitHub by visiting:
+remote:      https://github.com/hw405908/finalday_forlearninggit/pull/new/feature2
+remote: 
+To github.com:hw405908/finalday_forlearninggit.git
+ * [new branch]      feature2 -> feature2
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ 
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ 
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ 
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ ls
+readme.txt
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ git branch
+  feature1
+  feature2
+* main
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ git pull origin main
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 1.83 KiB | 938.00 KiB/s, done.
+From github.com:hw405908/finalday_forlearninggit
+ * branch            main       -> FETCH_HEAD
+   4215483..7f92e59  main       -> origin/main
+Updating 4215483..7f92e59
+Fast-forward
+ f1.txt | 1 +
+ f2.txt | 0
+ 2 files changed, 1 insertion(+)
+ create mode 100644 f1.txt
+ create mode 100644 f2.txt
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ ls
+f1.txt  f2.txt  readme.txt
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ 
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ 
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ cat f1.txt 
+Changes done by the feature1 branch!divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ 
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ 
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ ls
+f1.txt  f2.txt  readme.txt
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ git checkout f1.txt
+Updated 0 paths from the index
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ git checkout f1
+error: pathspec 'f1' did not match any file(s) known to git
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ git checkout feature1
+Switched to branch 'feature1'
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ ls
+f1.txt  readme.txt
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ git merge main
+Updating 84ee2f3..7f92e59
+Fast-forward
+ f2.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 f2.txt
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ ls
+f1.txt  f2.txt  readme.txt
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ git status
+On branch feature1
+nothing to commit, working tree clean
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ 
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ 
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ ^C
+divyansh@Divyansh:~/Documents/LogicalStreet/LearningGithub/learninggit_17/finalday_forlearninggit$ 
+
+
+
+
+
+
